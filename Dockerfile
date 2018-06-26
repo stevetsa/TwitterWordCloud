@@ -19,8 +19,8 @@ ENV BIN /usr/local/bin
 
 RUN [ "python3", "-c", "import nltk; nltk.download('all')" ]
 WORKDIR $SRC
-RUN git clone https://github.com/stevetsa/TwitterWordCloud.git
-WORKDIR /opt/TwitterWordCloud
+RUN git clone https://github.com/stevetsa/twitterwordcloud.git
+WORKDIR /opt/twitterwordcloud
 
 RUN cp *.py /usr/local/bin/.
 COPY Dockerfile /opt/Dockerfile
